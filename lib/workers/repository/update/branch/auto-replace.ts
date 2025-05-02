@@ -30,7 +30,7 @@ export async function confirmIfDepUpdated(
         `Could not extract ${packageFile!} (manager=${manager}) after autoreplace. Did the autoreplace make the file unparseable?`,
       );
       logger.trace(
-        { packageFile, content: newContent },
+        { packageFile, newContent: newContent },
         'packageFile content after autoreplace',
       );
       return false;
